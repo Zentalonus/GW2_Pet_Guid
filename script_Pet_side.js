@@ -24,6 +24,12 @@ document.getElementById("Wegmarke").innerHTML = "Wegmarke:" + Data[Variable].Weg
 document.getElementById("Wegmarken_id").innerHTML = "Wegmarken_id:" + Data[Variable].Wegmarken_id;
 if (Data[Variable].Bild_Direct != " "){
   document.getElementById("Bild_Direct").src = Data[Variable].Bild_Direct;
+}else {
+  give_Hint = document.createElement("a");
+  give_Hint.classList.add("Hint");
+  give_Hint.innerHTML = "Dieses Pet kann man nur durch das Spielen von Guildwars 1 erlangen. Für mehr Infos: \n https://wiki-de.guildwars2.com/wiki/Halle_der_Monumente_(Ruinen).";
+  give_Hint.href = "https://wiki-de.guildwars2.com/wiki/Halle_der_Monumente_(Ruinen)";
+  document.getElementById("Video").appendChild(give_Hint);
 };
 if (Data[Variable].Bild_Map != " "){
   document.getElementById("Bild_Map").src = Data[Variable].Bild_Map;
