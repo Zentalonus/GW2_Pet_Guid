@@ -72,9 +72,10 @@ img {
   font-size: 40px;
   font-style: normal;
   background-color: inherit;
-  color: #000000;
+  color: #ffffff;
   width: auto;
   padding: 0px 25% 0px 25%;
+  text-decoration: none;
 }
 
 
@@ -88,4 +89,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Hint{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: pre-line;
+  text-align: center;
 }
